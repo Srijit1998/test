@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="side">
+                <div class="side-section">
+                    <div class="profile">
+                        <img
+                            class="logo" 
+                            src="./Annotation 2021-07-03 132743.png"
+                            alt="logo"
+                        />
+                    </div>
+                    <div class="icons-list">
+                        <div class="icons">
+                            <i class="far fa-user icon"></i>
+                            <h5 class="icon-title">Students</h5>
+                        </div>
+                        <div class="icons" id="selected">
+                            <i class="fas fa-file-invoice icon"></i>
+                            <h5 class="icon-title">Lesson Plan</h5>
+                        </div>
+                        <div class="icons">
+                            <img 
+                                alt="svgImg" 
+                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzEgMTcxIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MS45OTY1NHYtMTcxLjk5NjU0aDE3MS45OTY1NHYxNzEuOTk2NTR6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzVmOWVhMCI+PHBhdGggZD0iTTY4Ljg3MDM2LDE0LjI1bC0zLjQ5MjkyLDE3Ljk3OTQ5Yy01Ljg3MjE5LDIuMjE0NTYgLTExLjI2NDU5LDUuMzE4NzYgLTE1Ljk4OTUsOS4xOTg0OWwtMTcuMjY5NzgsLTUuOTU2MDVsLTE2LjY0MzU1LDI4LjgwNjE1bDEzLjgzMjUyLDEyLjAyMzQzYy0wLjUzMTc2LDMuMjY0ODYgLTAuODA3MTMsNi4yOTAzOCAtMC44MDcxMyw5LjE5ODQ5YzAsMi45MTI0NyAwLjI4MzYzLDUuOTMyNDYgMC44MDcxMyw5LjE5ODQ5djAuMDEzOTJsLTEzLjgzMjUyLDEyLjAyMzQ0bDE2LjY0MzU1LDI4Ljc5MjIzbDE3LjI1NTg2LC01Ljk0MjE0YzQuNzI1MzUsMy44ODE4NCAxMC4xMjk5NSw2Ljk2ODczIDE2LjAwMzQyLDkuMTg0NTdsMy40OTI5MiwxNy45Nzk1aDMzLjI1OTI3bDMuNDkyOTIsLTE3Ljk3OTVjNS44NzYwMywtMi4yMTYwMSAxMS4yNjIzNywtNS4zMTUxOSAxNS45ODk1LC05LjE5ODQ4bDE3LjI2OTc4LDUuOTU2MDVsMTYuNjI5NjQsLTI4Ljc5MjIzbC0xMy44MTg2LC0xMi4wMzczNWMwLjUzMTc1LC0zLjI2NDg2IDAuODA3MTMsLTYuMjkwMzggMC44MDcxMywtOS4xOTg0OWMwLC0yLjkwMzc0IC0wLjI3Njk1LC01LjkyNTM0IC0wLjgwNzEzLC05LjE4NDU3di0wLjAxMzkybDEzLjgzMjUyLC0xMi4wMzczNWwtMTYuNjQzNTUsLTI4Ljc5MjI0bC0xNy4yNTU4Nyw1Ljk0MjE0Yy00LjcyNTM0LC0zLjg4MTgzIC0xMC4xMjk5NSwtNi45Njg3MyAtMTYuMDAzNDEsLTkuMTg0NTdsLTMuNDkyOTIsLTE3Ljk3OTQ5ek04MC42MTU0OCwyOC41aDkuNzY5MDRsMi43NjkyOSwxNC4yNWw3LjQzMTE1LDIuODExMDNjNC40NzkyMywxLjY4ODE5IDguNTAzNTcsNC4wMDU4NCAxMS45OTU2LDYuODc0NTFsNi4xNTA4OCw1LjAzNzZsMTMuNjkzMzcsLTQuNzAzNjFsNC44ODQ1Miw4LjQ0NzAybC0xMC45Mzc5OSw5LjUxODU1bDEuMjUyNDQsNy44MzQ3MnYwLjAxMzkyYzAuNDM1NjksMi42NzE0MyAwLjYyNjIyLDQuOTEyNDggMC42MjYyMiw2LjkxNjI2YzAsMi4wMDM3OCAtMC4xOTA1Myw0LjI0NDQ5IC0wLjYyNjIyLDYuOTE2MjZsLTEuMjY2MzUsNy44MzQ3MWwxMC45Mzc5OSw5LjUxODU2bC00Ljg4NDUyLDguNDYwOTRsLTEzLjY3OTQ0LC00LjcxNzUzbC02LjE2NDc5LDUuMDUxNTFjLTMuNDkyMDMsMi44Njg2NyAtNy41MDI0NSw1LjE4NjMyIC0xMS45ODE2OCw2Ljg3NDUxaC0wLjAxMzkybC03LjQzMTE1LDIuODExMDNsLTIuNzY5MjksMTQuMjVoLTkuNzU1MTNsLTIuNzY5MjksLTE0LjI1bC03LjQzMTE1LC0yLjgxMTAzYy00LjQ3OTI0LC0xLjY4ODE5IC04LjUwMzU4LC00LjAwNTg1IC0xMS45OTU2MSwtNi44NzQ1MWwtNi4xNTA4OCwtNS4wMzc2bC0xMy42OTMzNiw0LjcwMzYxbC00Ljg4NDUyLC04LjQ0NzAybDEwLjk1MTksLTkuNTMyNDdsLTEuMjY2MzYsLTcuODA2ODh2LTAuMDEzOTJjLTAuNDI5NDQsLTIuNjgzMDUgLTAuNjI2MjIsLTQuOTMwMzggLTAuNjI2MjIsLTYuOTMwMTdjMCwtMi4wMDM3OCAwLjE5MDU0LC00LjI0NDQ5IDAuNjI2MjIsLTYuOTE2MjZsMS4yNjYzNiwtNy44MzQ3MmwtMTAuOTUxOSwtOS41MTg1NWw0Ljg4NDUyLC04LjQ2MDk0bDEzLjY5MzM2LDQuNzE3NTNsNi4xNTA4OCwtNS4wNTE1MWMzLjQ5MjAzLC0yLjg2ODY3IDcuNTE2MzYsLTUuMTg2MzIgMTEuOTk1NjEsLTYuODc0NTFsNy40MzExNSwtMi44MTEwM3pNODUuNSw1N2MtMTUuNjUwMjMsMCAtMjguNSwxMi44NDk3NyAtMjguNSwyOC41YzAsMTUuNjUwMjMgMTIuODQ5NzcsMjguNSAyOC41LDI4LjVjMTUuNjUwMjMsMCAyOC41LC0xMi44NDk3NyAyOC41LC0yOC41YzAsLTE1LjY1MDIzIC0xMi44NDk3NywtMjguNSAtMjguNSwtMjguNXpNODUuNSw3MS4yNWM3LjkxOTI3LDAgMTQuMjUsNi4zMzA3MyAxNC4yNSwxNC4yNWMwLDcuOTE5MjcgLTYuMzMwNzMsMTQuMjUgLTE0LjI1LDE0LjI1Yy03LjkxOTI3LDAgLTE0LjI1LC02LjMzMDczIC0xNC4yNSwtMTQuMjVjMCwtNy45MTkyNyA2LjMzMDczLC0xNC4yNSAxNC4yNSwtMTQuMjV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="/>
+                            <h5 class="icon-title">Settings</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="container">
+                    
+                </div>
+                
+                <h4 class="title"><i class="fas fa-caret-left"></i> Videos</h4>
+                <div class="section">
+                    <div class="content">
+                        <input 
+                            type="text"
+                            placeholder="Insert URL here" 
+                        />
+                        <h6 class="or">or</h6>
+                    </div>
+                    <div class="section-upload">
+                        <h6 class="upload">upload</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
